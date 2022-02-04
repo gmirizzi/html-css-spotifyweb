@@ -37,7 +37,6 @@ header img {
 /* CONTAINER */
 #container {
     display: flex;
-    height: calc(100vh - 100px);
 }
 
 /* ASIDE */
@@ -53,9 +52,11 @@ aside nav > * {
 
 /* CONTENT */
 #maincontainer {
-    padding-top: 50px;
+    height: calc(100vh - 100px);
     width: 80%;
     background-color: #141922ff;
+    overflow: auto;
+    padding: 50px 2em 0;
 }
 
 #maincontainer nav ul{
@@ -74,7 +75,25 @@ aside nav > * {
 }
 
 #maincontainer main .row {
+    margin: 1em 0;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.row .item {
+    width: 200px;
+    text-align: center;
+}
+
+.item img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+.item h2 {
+    font-size: 1em;
 }
 
 /* BOTTOMBAR */
