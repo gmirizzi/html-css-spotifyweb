@@ -6,8 +6,8 @@
 
 :root {
     color: gray;
+    font-family: 'Montserrat', sans-serif;
 }
-
 
 ul {
     list-style: none;
@@ -18,32 +18,8 @@ a {
     color: unset;
 }
 
-#container {
-    display: flex;
-    height: calc(100vh - 100px);
-}
-
-#maincontainer {
-    padding-top: 50px;
-    width: 80%;
-    background-color: #141922ff;
-}
-
-aside {
-    padding-top: 50px;
-    width: 20%;
-    background-color: black;
-}
-
-main {
-    display: flex;
-    overflow: auto;
-}
-
-header, #bottombar {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
+h1, h2, h3 {
+    color: white;
 }
 
 /* HEADER */
@@ -58,9 +34,59 @@ header img {
     padding: .5rem;
 }
 
+/* CONTAINER */
+#container {
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+/* ASIDE */
+aside {
+    padding-top: 50px;
+    width: 20%;
+    background-color: black;
+}
+
+aside nav > * {
+    display: block;
+}
+
+/* CONTENT */
+#maincontainer {
+    padding-top: 50px;
+    width: 80%;
+    background-color: #141922ff;
+}
+
+#maincontainer nav ul{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+#maincontainer nav ul li {
+    padding: 1em;
+}
+
+#maincontainer main {
+    display: flex;
+    flex-direction: column;
+}
+
+#maincontainer main .row {
+    display: flex;
+}
+
 /* BOTTOMBAR */
 #bottombar {
     width: 100%;
     height: 100px;
     background-color: #282828ff;
+}
+
+/* COMMON */
+header, #bottombar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
 }
