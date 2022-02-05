@@ -48,17 +48,27 @@ header img {
 
 /* ASIDE */
 aside {
+    display: flex;
+    flex-direction: column;
     padding-top: 50px;
-    width: 200px;
+    flex-shrink: 0;
     background-color: black;
-}
-
-aside nav > * {
-    display: block;
 }
 
 aside img {
     height: 1em;
+}
+
+aside main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+aside section div {
+    overflow: auto;
 }
 
 aside section a {
@@ -67,10 +77,10 @@ aside section a {
 
 /* CONTENT */
 #maincontainer {
-    width: calc(100vw - 200px);
     background-color: #141922ff;
     overflow: auto;
-    padding: 50px 2em 0;
+    padding: 50px 0 0;
+    flex-grow: 1;
 }
 
 #maincontainer nav ul{
@@ -92,16 +102,15 @@ aside section a {
     margin: 1em 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
 }
 
 .row .item {
-    width: 200px;
+    flex-basis: calc(100% / 6);
     text-align: center;
 }
 
 .item img {
-    height: 200px;
+    height: auto;
     width: 100%;
     margin-bottom: .5em;
 }
