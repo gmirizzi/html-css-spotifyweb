@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"
+        integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify - Lettore Web</title>
 </head>
+
 <body>
     <header>
         <!-- logo a sx e button a dx, position fixed altezza fissa -->
@@ -19,15 +25,17 @@
     <div id="container">
         <aside>
             <nav>
-                <a href="">Home</a>
+                <a href=""> <img src="img/home.svg" alt=""> Home</a>
                 <!-- Search -->
-                <input type="text">
-                <a href="">La tua libreria</a>
+                <div>
+                    <img src="img/search.svg" alt=""><input type="search" placeholder="Cerca">
+                </div>
+                <a href=""> <img src="img/libreria.svg" alt=""> La tua libreria</a>
             </nav>
             <main>
                 <section>
                     <h1>Playlist</h1>
-                    <button>Crea Playlist</button>
+                    <button> <span>+</span> Crea Playlist</button>
                     <ul>
                         <li><a href="">Nome Playlist</a></li>
                         <li><a href="">Nome Playlist</a></li>
@@ -38,12 +46,12 @@
                         <li><a href="">Nome Playlist</a></li>
                     </ul>
                 </section>
-                <a href="">Installa app</a>
+                <a href=""> <img src="img/download.svg" alt=""> Installa app</a>
             </main>
             <hr>
             <footer>
                 <div id="utente">
-                    <button></button><a href="">John Doe</a>
+                    <button><img src="img/profile.svg" alt=""></button><a href="">John Doe</a>
                 </div>
             </footer>
         </aside>
@@ -127,28 +135,37 @@
     </div>
     <div id="bottombar">
         <!-- altezza fissa e position fixed -->
-        <div id="left">
-            <img src="" alt="">
-            <h1>Sinister</h1>
-            <div>Brano Nome</div>
-            <button></button>
-            <button></button>
+        <div id="song">
+            <img src="img/sinister.jpeg" alt="album sinister" height="50px" width="50px">
+            <div>
+                <h1>Sinister</h1>
+                <div>Brano Nome</div>
+            </div>
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-folder"></i></button>
         </div>
-        <div id="center">
+        <div id="controls">
             <div id="buttons">
-                <button></button><button></button><button></button><button></button><button></button>
+                <button><i class="fas fa-random"></i>
+                </button>
+                <button><i class="fas fa-step-backward"></i></button>
+                <button><i class="far fa-play-circle"></i></button>
+                <button><i class="fas fa-step-forward"></i></button>
+                <button><i class="fas fa-redo"></i></button>
             </div>
             <div>
                 <!-- durata del brano -->
             </div>
         </div>
-        <div id="right">
-            <a href=""></a>
-            <button></button><button></button>
+        <div id="options">
+            <a href=""><i class="fas fa-list"></i></a>
+            <button><i class="fas fa-desktop"></i></button>
+            <button><i class="fas fa-volume-up"></i></button>
             <div>
                 <!-- barra volume -->
             </div>
         </div>
     </div>
 </body>
+
 </html>
