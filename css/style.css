@@ -43,53 +43,31 @@ header img {
 /* CONTAINER */
 #container {
     display: flex;
+    height: calc(100vh - 100px);
 }
 
 /* ASIDE */
 aside {
     padding-top: 50px;
-    width: 20%;
+    width: 200px;
     background-color: black;
-    position: relative;
 }
 
 aside nav > * {
     display: block;
 }
 
-aside nav {
-    height: 15%;
-}
-
 aside img {
     height: 1em;
-}
-
-aside main {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 aside section a {
     line-height: 2em;
 }
 
-aside ul {
-    overflow: auto;
-}
-
-aside footer {
-    position: absolute;
-    bottom: 0;
-    height: 5%;
-}
-
 /* CONTENT */
 #maincontainer {
-    height: calc(100vh - 100px);
-    width: 80%;
+    width: calc(100vw - 200px);
     background-color: #141922ff;
     overflow: auto;
     padding: 50px 2em 0;
@@ -139,6 +117,7 @@ aside footer {
     background-color: #282828ff;
     align-items: center;
     padding: 0 .5rem;
+    bottom: 0;
 }
 
 #bottombar i {
