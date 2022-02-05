@@ -33,11 +33,20 @@ header {
     width: 100%;
     align-items: center;
     z-index: 1;
+    padding: 1em;
 }
 
 header img {
-    height: 50px;
-    padding: .5rem;
+    height: 2.5em;
+}
+
+header button {
+    margin-right: 1em;
+    padding: .5em 2em;
+    border-radius: 2em;
+    border-color: white;
+    color: white;
+    text-transform: uppercase;
 }
 
 /* CONTAINER */
@@ -50,7 +59,7 @@ header img {
 aside {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding: calc(50px + 2em) 1em 0;
     flex-shrink: 0;
     background-color: black;
 }
@@ -79,7 +88,7 @@ aside section a {
 #maincontainer {
     background-color: #141922ff;
     overflow: auto;
-    padding: 50px 0 0;
+    padding: calc(50px + 2em) 1em 0;
     flex-grow: 1;
 }
 
@@ -99,14 +108,14 @@ aside section a {
 }
 
 #maincontainer main .row {
-    margin: 1em 0;
+    margin: 2em -.5em;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .row .item {
-    flex-basis: calc(100% / 6);
+    flex-basis: calc((100% / 6) - 1em);
     text-align: center;
+    margin: 0 .5em;
 }
 
 .item img {
@@ -117,6 +126,10 @@ aside section a {
 
 .item h2 {
     font-size: 1em;
+}
+
+#maincontainer main section:last-child .item img {
+    border-radius: 50%;
 }
 
 /* BOTTOMBAR */
