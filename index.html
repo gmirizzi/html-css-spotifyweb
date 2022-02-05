@@ -28,14 +28,14 @@
                 <a href=""> <img src="img/home.svg" alt=""> Home</a>
                 <!-- Search -->
                 <div>
-                    <img src="img/search.svg" alt=""><input type="search" placeholder="Cerca">
+                    <img src="img/search.svg" alt=""> <input type="search" placeholder="Cerca">
                 </div>
                 <a href=""> <img src="img/libreria.svg" alt=""> La tua libreria</a>
             </nav>
             <main>
                 <section>
                     <h1>Playlist</h1>
-                    <button> <span>+</span> Crea Playlist</button>
+                    <button><i class="fas fa-plus-square"></i> Crea Playlist</button>
                     <div>
                         <ul>
                             <li><a href="">Nome Playlist</a></li>
@@ -52,9 +52,7 @@
             </main>
             <hr>
             <footer>
-                <div id="utente">
-                    <button><img src="img/profile.svg" alt=""></button><a href="">John Doe</a>
-                </div>
+                <button><img src="img/profile.svg" alt=""></button><a href="">John Doe</a>
             </footer>
         </aside>
         <div id="maincontainer">
@@ -134,39 +132,39 @@
                 </section>
             </main>
         </div>
-    <div id="bottombar">
-        <!-- altezza fissa e position fixed -->
-        <div id="song">
-            <img src="img/sinister.jpeg" alt="album sinister" height="50px" width="50px">
-            <div>
-                <h1>Sinister</h1>
-                <div>Brano Nome</div>
+        <div id="bottombar">
+            <!-- altezza fissa e position fixed -->
+            <div id="song">
+                <img src="img/sinister.jpeg" alt="album sinister" height="50px" width="50px">
+                <div>
+                    <h1>Sinister</h1>
+                    <div>Brano Nome</div>
+                </div>
+                <button><i class="far fa-heart"></i></button>
+                <button><i class="far fa-folder"></i></button>
             </div>
-            <button><i class="far fa-heart"></i></button>
-            <button><i class="far fa-folder"></i></button>
+            <div id="controls">
+                <div id="buttons">
+                    <button><i class="fas fa-random"></i>
+                    </button>
+                    <button><i class="fas fa-step-backward"></i></button>
+                    <button><i class="far fa-play-circle"></i></button>
+                    <button><i class="fas fa-step-forward"></i></button>
+                    <button><i class="fas fa-redo"></i></button>
+                </div>
+                <div>
+                    <!-- durata del brano -->
+                </div>
+            </div>
+            <div id="options">
+                <a href=""><i class="fas fa-list"></i></a>
+                <button><i class="fas fa-desktop"></i></button>
+                <button><i class="fas fa-volume-up"></i></button>
+                <div>
+                    <!-- barra volume -->
+                </div>
+            </div>
         </div>
-        <div id="controls">
-            <div id="buttons">
-                <button><i class="fas fa-random"></i>
-                </button>
-                <button><i class="fas fa-step-backward"></i></button>
-                <button><i class="far fa-play-circle"></i></button>
-                <button><i class="fas fa-step-forward"></i></button>
-                <button><i class="fas fa-redo"></i></button>
-            </div>
-            <div>
-                <!-- durata del brano -->
-            </div>
-        </div>
-        <div id="options">
-            <a href=""><i class="fas fa-list"></i></a>
-            <button><i class="fas fa-desktop"></i></button>
-            <button><i class="fas fa-volume-up"></i></button>
-            <div>
-                <!-- barra volume -->
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
