@@ -198,6 +198,19 @@ aside footer img {
     .row .item {
         flex-basis: calc((100% / 2) - 1em);
     }
+
+    /* inserire wrap nella bottombar */
+}
+
+/* mediaquery xs */
+@media screen and (max-width: 576px) {
+    aside {
+        flex-shrink: 1;
+    }
+
+    aside section, aside hr {
+        display: none;
+    }
 }
 
 /* BOTTOMBAR */
@@ -208,6 +221,7 @@ aside footer img {
     align-items: center;
     padding: 0 .5rem;
     bottom: 0;
+    justify-content: space-between;
 }
 
 #bottombar i {
@@ -218,12 +232,64 @@ aside footer img {
     border: none;
 }
 
-#bottombar #song {
+#song {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 1em;
-    font-size: .7rem;
+}
+
+#controls {
+    text-align: center;
+    flex-basis: 50%;
+}
+
+#controls #buttons {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons button {
+    margin: 0 1em;
+}
+
+#buttons i{
+    font-size: 2rem;
+}
+
+#buttons button:nth-child(3) i {
+    font-size: 3rem;
+}
+
+#controls div:last-child {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.bar {
+    height: 5px;
+    background-color: gray;
+    border-radius: 2px;
+    margin: 0 1em;
+}
+
+#controls .bar {
+    flex-grow: 1;
+}
+
+#options .bar {
+    margin-left: -.5em;
+    flex-grow: 1;
+}
+
+#options {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    flex-basis: 200px;
 }
 
 /* COMMON */
