@@ -19,18 +19,19 @@
 <body>
     <header>
         <!-- logo a sx e button a dx, position fixed altezza fissa -->
-        <img src="img/logo.svg" alt="logo spotify">
+        <img src="img/logo.svg" alt="logo e scritta spotify">
+        <img src="img/logo-small.svg" alt="logo spotify">
         <button>Effettua l'upgrade</button>
     </header>
     <div id="container">
         <aside>
             <nav>
-                <a href=""> <img src="img/home.svg" alt=""> Home</a>
+                <a href=""> <img src="img/home.svg" alt=""><span class="text">Home</span></a>
                 <!-- Search -->
                 <div>
                     <img src="img/search.svg" alt=""> <input type="search" placeholder="Cerca">
                 </div>
-                <a href=""> <img src="img/libreria.svg" alt=""> La tua libreria</a>
+                <a href=""> <img src="img/libreria.svg" alt=""><span class="text">La tua libreria</span></a>
             </nav>
             <main>
                 <section>
@@ -48,11 +49,11 @@
                         </ul>
                     </div>
                 </section>
-                <a href=""> <img src="img/download.svg" alt=""> Installa app</a>
+                <a href=""> <img src="img/download.svg" alt=""><span class="text">Installa app</span></a>
             </main>
             <hr>
             <footer>
-                <button><img src="img/profile.svg" alt=""></button><a href="">John Doe</a>
+                <button><img src="img/profile.svg" alt=""></button><a href=""><span class="text">John Doe</span></a>
             </footer>
         </aside>
         <div id="maincontainer">
@@ -140,8 +141,10 @@
                     <h1>Sinister</h1>
                     <div>Brano Nome</div>
                 </div>
-                <button><i class="far fa-heart"></i></button>
-                <button><i class="far fa-folder"></i></button>
+                <div>
+                    <button><i class="far fa-heart"></i></button>
+                    <button><i class="far fa-folder"></i></button>
+                </div>
             </div>
             <div id="controls">
                 <div id="buttons">
@@ -169,6 +172,9 @@
                 <button><i class="fas fa-volume-up"></i></button>
                 <div class="bar">
                     <!-- barra volume -->
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
     </div>

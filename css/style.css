@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +42,10 @@ header img {
     height: 2.5em;
 }
 
+header img:last-of-type {
+    display: none;
+}
+
 header button {
     margin-right: 1em;
     padding: .5em 2em;
@@ -65,13 +70,17 @@ aside {
     background-color: black;
 }
 
+aside .text {
+    margin-left: .2em;
+}
+
 aside img {
     height: 1.5rem;
     vertical-align: middle;
 }
 
 aside nav > * {
-    line-height: 1.rem;
+    line-height: 1.5rem;
     margin: .5rem 0;
 }
 
@@ -208,8 +217,13 @@ aside footer img {
         flex-shrink: 1;
     }
 
-    aside section, aside hr {
+    aside section, aside hr, aside input, header img:first-child, .text {
         display: none;
+    }
+
+    header img:last-of-type {
+        display: initial;
+        height: 1.5rem;
     }
 }
 
@@ -226,6 +240,7 @@ aside footer img {
 
 #bottombar i {
     color: white;
+    font-size: 1.2rem;
 }
 
 #bottombar button {
@@ -239,9 +254,21 @@ aside footer img {
     gap: 1em;
 }
 
+#song h1{
+    font-size: 1.2em;
+}
+
+#song i {
+    color: unset;
+}
+
+#song button {
+    margin: 0 .2em;
+}
+
 #controls {
     text-align: center;
-    flex-basis: 50%;
+    flex-basis: 600px;
 }
 
 #controls #buttons {
@@ -255,11 +282,11 @@ aside footer img {
 }
 
 #buttons i{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #buttons button:nth-child(3) i {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 #controls div:last-child {
@@ -270,9 +297,16 @@ aside footer img {
 
 .bar {
     height: 5px;
-    background-color: gray;
+    background-color: #5a5a5aff;
     border-radius: 2px;
     margin: 0 1em;
+}
+
+.bar > div {
+    height: 100%;
+    width: 20%;
+    background-color: #c1c1c1ff;
+    border-radius: 2px;
 }
 
 #controls .bar {
@@ -285,11 +319,11 @@ aside footer img {
 }
 
 #options {
+    flex-basis: 200px;    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 1em;
-    flex-basis: 200px;
 }
 
 /* COMMON */
