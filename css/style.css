@@ -34,6 +34,13 @@ button {
     color: unset;
 }
 
+.selected {
+    height: 2px;
+    width: 20px;
+    background-color: #adff2fff;
+    margin: .5em auto;
+}
+
 /* HEADER */
 header {
     background-color: rgba(0, 0, 0, 0.5);
@@ -104,13 +111,17 @@ aside input::placeholder {
     font-family: Montserrat;
 }
 
+aside nav div:hover {
+    filter: brightness(100);
+}
+
 aside main {
     flex-grow: 1;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    overflow: auto;
     margin: 1em 0 .5em;
+    overflow: auto;
 }
 
 aside section h1{
@@ -124,13 +135,13 @@ aside section button {
     margin: .5rem 0;
 }
 
+aside section button:hover {
+    filter: brightness(100);
+}
+
 aside section button i {
     font-size: 2em;
     vertical-align: middle;
-}
-
-aside section div {
-    overflow: auto;
 }
 
 aside section a {
@@ -370,7 +381,7 @@ aside footer svg {
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    right: -.5em;
+    right: -1em;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -389,11 +400,10 @@ aside footer svg {
 
 #options .barcontainer {
     margin-left: -.5em;
-    flex-grow: 1;
+    width: 100px;
 }
 
-#options {
-    flex-basis: 200px;    
+#options {    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
