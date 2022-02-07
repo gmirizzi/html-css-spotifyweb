@@ -146,17 +146,13 @@ aside footer {
 
 aside footer button {
     border: none;
-    background-color: gray;
-    height: 1.5em;
-    width: 1.5em;
     vertical-align: middle;
-    border-radius: 50%;
-    margin-right: .5em;
 }
 
-aside footer img {
-    object-fit: cover;
+aside footer svg {
+    background-color: gray;
     border-radius: 50%;
+    fill: white;
 }
 
 /* CONTENT */
