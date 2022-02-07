@@ -356,6 +356,18 @@ aside footer img {
     width: 20%;
     background-color: #c1c1c1ff;
     border-radius: 2px;
+    position: relative;
+}
+
+.pointer {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: -.5em;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #controls .bar {
