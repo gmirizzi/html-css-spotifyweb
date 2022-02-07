@@ -207,23 +207,24 @@ aside footer img {
     .row .item {
         flex-basis: calc((100% / 2) - 1em);
     }
-
-    /* inserire wrap nella bottombar */
 }
 
-/* mediaquery xs */
 @media screen and (max-width: 576px) {
-    aside {
-        flex-shrink: 1;
+    header img:last-of-type {
+        display: initial;
+        height: 1.5rem;
     }
 
     aside section, aside hr, aside input, header img:first-child, .text {
         display: none;
     }
 
-    header img:last-of-type {
-        display: initial;
-        height: 1.5rem;
+    aside nav {
+        flex-grow: 1;
+    }
+
+    aside main {
+        flex-grow: 0;
     }
 }
 
@@ -269,6 +270,7 @@ aside footer img {
 #controls {
     text-align: center;
     flex-basis: 600px;
+    padding: 1em;
 }
 
 #controls #buttons {
