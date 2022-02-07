@@ -60,6 +60,7 @@ header button {
     border-color: white;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 header button:hover {
@@ -137,6 +138,7 @@ aside section button {
     font-size: 1.2rem;
     line-height: 2rem;
     margin: .5rem 0;
+    cursor: pointer;
 }
 
 aside section button:hover {
@@ -346,6 +348,7 @@ aside footer svg {
 }
 
 #controls #buttons {
+    flex-basis: 200px;
     height: 3.5rem;
     margin-bottom: 1rem;
     display: flex;
@@ -353,7 +356,7 @@ aside footer svg {
 }
 
 #buttons button {
-    margin: 0 1em;
+    margin: 0 1rem;
 }
 
 #buttons i{
@@ -362,6 +365,7 @@ aside footer svg {
 
 #buttons button:nth-child(3) i {
     font-size: 2.5rem;
+    cursor: pointer;
 }
 
 #buttons button:nth-child(3):hover i {
@@ -379,6 +383,7 @@ aside footer svg {
     background-color: #5a5a5aff;
     border-radius: 2px;
     margin: 0 1em;
+    cursor: pointer;
 }
 
 .bar {
