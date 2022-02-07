@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    filter: brightness(100);
 }
 
 h1, h2, h3 {
@@ -80,13 +80,12 @@ aside {
     background-color: black;
 }
 
-aside .text {
-    margin-left: .2em;
-}
-
-aside img {
+aside svg {
     height: 1.5rem;
+    width: 1.5rem;
     vertical-align: middle;
+    fill: gray;
+    margin-right: .2em;
 }
 
 aside nav > * {
@@ -99,6 +98,10 @@ aside nav input {
     border: none;
     font-size: 1rem;
     color: unset;
+}
+
+aside input::placeholder {
+    font-family: Montserrat;
 }
 
 aside main {
@@ -205,6 +208,7 @@ aside footer img {
     transform: translate(-50%, -50%);
     font-size: 50px;
     display: none;
+    color: white;
 }
 
 .item img {
@@ -227,6 +231,10 @@ aside footer img {
 #maincontainer main section:last-child .item img {
     border-radius: 50%;
     margin-bottom: .5em;
+}
+
+#maincontainer main section:last-child .item a:hover {
+    filter: brightness(0.5);
 }
 
 /* MEDIA QUERIES */
