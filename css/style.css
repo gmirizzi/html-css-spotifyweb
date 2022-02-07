@@ -338,20 +338,20 @@ aside footer img {
     font-size: 3rem;
 }
 
-#controls div:last-child {
+#controls #time {
     display: flex;
     align-items: center;
     color: white;
 }
 
-.bar {
+.barcontainer {
     height: 5px;
     background-color: #5a5a5aff;
     border-radius: 2px;
     margin: 0 1em;
 }
 
-.bar > div {
+.bar {
     height: 100%;
     width: 20%;
     background-color: #c1c1c1ff;
@@ -360,6 +360,7 @@ aside footer img {
 }
 
 .pointer {
+    display: none;
     height: 1em;
     width: 1em;
     border-radius: 50%;
@@ -370,11 +371,19 @@ aside footer img {
     transform: translate(-50%, -50%);
 }
 
-#controls .bar {
+.barcontainer:hover .bar {
+    background-color: #adff2fff;
+}
+
+.barcontainer:hover .pointer {
+    display: initial;
+}
+
+#controls .barcontainer {
     flex-grow: 1;
 }
 
-#options .bar {
+#options .barcontainer {
     margin-left: -.5em;
     flex-grow: 1;
 }
