@@ -41,6 +41,7 @@ header {
     align-items: center;
     z-index: 1;
     padding: 1em;
+    height: 50px;
 }
 
 header img {
@@ -58,6 +59,10 @@ header button {
     border-color: white;
     color: white;
     text-transform: uppercase;
+}
+
+header button:hover {
+    font-size: 1.2rem;
 }
 
 /* CONTAINER */
@@ -289,6 +294,10 @@ aside footer img {
 
 #song i {
     color: unset;
+}
+
+#song i:hover {
+    filter: brightness(100);
 }
 
 #song button {
