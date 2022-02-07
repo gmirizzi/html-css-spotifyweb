@@ -290,10 +290,15 @@ aside footer img {
 
 #song h1{
     font-size: 1.2em;
+    margin-bottom: .1em;
 }
 
 #song i {
     color: unset;
+}
+
+#song a:hover {
+    text-decoration: underline;
 }
 
 #song i:hover {
