@@ -34,6 +34,12 @@ button {
     color: unset;
 }
 
+/* COMMON */
+header, #bottombar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
 
 /* HEADER */
 header {
@@ -280,7 +286,7 @@ aside footer svg {
         height: 1.5rem;
     }
 
-    aside section, aside hr, aside input, header img:first-child, .text {
+    aside section, aside hr, aside input, header img:first-child, .text, #options .barcontainer{
         display: none;
     }
 
@@ -290,6 +296,10 @@ aside footer svg {
 
     aside main {
         flex-grow: 0;
+    }
+
+    #options #btns {
+        flex-wrap: wrap;
     }
 }
 
@@ -426,13 +436,11 @@ aside footer svg {
 #options {    
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 1em;
 }
 
-/* COMMON */
-header, #bottombar {
+#options #btns {
     display: flex;
-    position: fixed;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin-right: 1em;
 }
