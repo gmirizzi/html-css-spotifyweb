@@ -225,6 +225,7 @@ aside footer svg {
     flex-basis: calc((100% / 6) - 1em);
     text-align: center;
     margin: 0 .5em 2em;
+    cursor: pointer;
 }
 
 .preview {
@@ -251,11 +252,11 @@ aside footer svg {
     font-size: 1em;
 }
 
-.item a:hover img{
+.item:hover img{
     filter: opacity(.5);
 }
 
-.item a:hover i {
+.item:hover i {
     display: initial;
 }
 
@@ -287,7 +288,7 @@ aside footer svg {
         height: 1.5rem;
     }
 
-    aside section, aside hr, aside input, header img:first-child, .text, #options .barcontainer{
+    aside main, aside hr, aside input, header img:first-child, .text, #options .barcontainer{
         display: none;
     }
 
@@ -297,7 +298,6 @@ aside footer svg {
 
     aside main {
         flex-grow: 0;
-        overflow: initial;
     }
 
     #options #btns {
